@@ -49,29 +49,46 @@
             </objects>
             <point key="canvasLocation" x="139" y="78"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="TzY-xK-HHW">
+        <!--View Controller2-->
+        <scene sceneID="9PE-ng-nhx">
             <objects>
-                <viewController id="M4F-FM-7Fe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ak0-C9-K0Y">
+                <viewController id="F8T-Bd-Mj1" customClass="ViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IRZ-KW-8ZZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="search providers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uo-xz-B5Z">
-                                <rect key="frame" x="144" y="104" width="127" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4L-R1-eie">
+                                <rect key="frame" x="151" y="154" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="some button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u06-ob-Rsr">
+                                <rect key="frame" x="226" y="236" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="1FI-y7-axZ"/>
+                        <viewLayoutGuide key="safeArea" id="JNp-Pd-eBm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem image="house.fill" catalog="system" id="Q3B-yd-GDS"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="h38-yB-a72"/>
+                        <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="IA6-CA-zlE"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="CDC-DB-sSS"/>
+                        <barButtonItem title="Item" image="plus" catalog="system" id="cyq-Ss-BbI"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="iLe-Pf-3vT"/>
+                        <barButtonItem title="Item" image="heart.fill" catalog="system" id="n9m-5r-Zvi"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="uGn-o0-Unx"/>
+                        <barButtonItem title="Item" image="person.crop.circle.fill" catalog="system" id="QUX-uH-vpV"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YuL-J9-exX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCY-ED-Cfd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="78"/>
+            <point key="canvasLocation" x="846" y="78"/>
         </scene>
     </scenes>
     <resources>
