@@ -25,6 +25,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem image="house.fill" catalog="system" id="1H8-Ap-uLl"/>
+                        <barButtonItem image="magnifyingglass" catalog="system" id="NCO-De-Sb0"/>
+                        <barButtonItem image="plus" catalog="system" id="YeP-Jc-R3G"/>
+                        <barButtonItem image="heart.fill" catalog="system" id="MOY-Bb-hSI"/>
+                        <barButtonItem image="person.crop.circle.fill" catalog="system" id="ao3-F6-Dwn"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,6 +40,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
