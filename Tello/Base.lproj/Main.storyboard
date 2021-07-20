@@ -27,10 +27,14 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem image="house.fill" catalog="system" id="1H8-Ap-uLl"/>
-                        <barButtonItem image="magnifyingglass" catalog="system" id="NCO-De-Sb0"/>
-                        <barButtonItem image="plus" catalog="system" id="YeP-Jc-R3G"/>
-                        <barButtonItem image="heart.fill" catalog="system" id="MOY-Bb-hSI"/>
-                        <barButtonItem image="person.crop.circle.fill" catalog="system" id="ao3-F6-Dwn"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fy1-8e-dYC"/>
+                        <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="rt3-VJ-QLd"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Vzm-vE-QBp"/>
+                        <barButtonItem title="Item" image="plus" catalog="system" id="q3U-v8-wcv"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="XsU-Dv-XxB"/>
+                        <barButtonItem title="Item" image="heart.fill" catalog="system" id="Seg-y2-6nh"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="AYK-yS-dVD"/>
+                        <barButtonItem title="Item" image="person.crop.circle.fill" catalog="system" id="0eO-c2-gqH"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
