@@ -15,9 +15,18 @@ class FilterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func FilterSpecializedTextBox(_ sender: Any) {
+    var possibleSpecialties = ["anxiety", "adhd"]
+    var doctors = ["Lila Massoumi": ["adhd", "anxiety", "BCBS"]]
+    
+    @IBOutlet weak var FilterSpecialtyTextBox: UITextField!
+    
+    @IBAction func FilterSubmitButton(_ sender: Any) {
+        if let typeOfCare = FilterSpecialtyTextBox.text {
+            
+        }
     }
+    
+    //.lowercased() to completely lowercase
     
     /*
     // MARK: - Navigation

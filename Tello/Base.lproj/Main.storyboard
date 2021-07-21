@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tello" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3E0-vK-HYT">
-                                <rect key="frame" x="0.0" y="764" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="656" width="414" height="49"/>
                                 <items>
                                     <barButtonItem title="Item" image="house.fill" catalog="system" id="Y30-mi-gGy"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="EWF-vG-3QO"/>
@@ -63,7 +63,7 @@
             <objects>
                 <viewController id="F8T-Bd-Mj1" customClass="FilterViewController" customModule="Tello" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IRZ-KW-8ZZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter here :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbU-kL-kMx">
@@ -98,11 +98,12 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="FilterSubmitButton:" destination="F8T-Bd-Mj1" eventType="touchUpInside" id="11h-uB-NfL"/>
                                     <segue destination="DRm-97-8w5" kind="show" id="Hmr-fX-Cti"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-X5-wIg">
-                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="715" width="414" height="44"/>
                                 <items>
                                     <barButtonItem title="Item" image="house.fill" catalog="system" id="UTB-Fd-WLu">
                                         <connections>
@@ -150,6 +151,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="FilterSpecializedTextBox" destination="Hw7-vA-G3V" id="ae2-Qz-CpW"/>
+                        <outlet property="FilterSpecialtyTextBox" destination="Hw7-vA-G3V" id="XY0-Hv-Rlh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCY-ED-Cfd" sceneMemberID="firstResponder"/>
@@ -161,11 +163,11 @@
             <objects>
                 <tableViewController id="DRm-97-8w5" customClass="ResultsTableViewController" customModule="Tello" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GhR-Z0-Wsf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <toolbar key="tableHeaderView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2bO-tV-hf4">
-                            <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="-54" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Item" image="arrowshape.turn.up.backward.fill" catalog="system" id="fG2-mn-A1y">
@@ -194,7 +196,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hmr-fX-Cti"/>
         <segue reference="d7Z-9u-NoA"/>
     </inferredMetricsTieBreakers>
     <resources>
