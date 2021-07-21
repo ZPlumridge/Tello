@@ -51,18 +51,19 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OFq-gm-Drr"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
         </scene>
-        <!--View Controller2-->
+        <!--Filter View Controller-->
         <scene sceneID="9PE-ng-nhx">
             <objects>
-                <viewController id="F8T-Bd-Mj1" customClass="ViewController2" sceneMemberID="viewController">
+                <viewController id="F8T-Bd-Mj1" customClass="FilterViewController" customModule="Tello" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IRZ-KW-8ZZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter here :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbU-kL-kMx">
@@ -71,6 +72,18 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hw7-vA-G3V">
+                                <rect key="frame" x="129" y="431" width="157" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="n0A-Rr-lDP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="tpu-Qh-z0U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="FilterSpecializedTextBox:" destination="F8T-Bd-Mj1" eventType="editingDidEnd" id="yhT-9G-gt3"/>
+                                </connections>
+                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="What type of care are you looking for today?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-2h-iok">
                                 <rect key="frame" x="0.0" y="216" width="414" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,10 +101,14 @@
                                     <segue destination="DRm-97-8w5" kind="show" id="Hmr-fX-Cti"/>
                                 </connections>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-X5-wIg">
-                                <rect key="frame" x="0.0" y="656" width="414" height="49"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-X5-wIg">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" image="house.fill" catalog="system" id="UTB-Fd-WLu"/>
+                                    <barButtonItem title="Item" image="house.fill" catalog="system" id="UTB-Fd-WLu">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="wLM-IP-RdV"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5eo-Ua-h7l"/>
                                     <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="1qY-rG-PkA"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7nu-V8-Adn"/>
@@ -102,15 +119,6 @@
                                     <barButtonItem title="Item" image="person.circle.fill" catalog="system" id="dLf-zE-Gie"/>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hw7-vA-G3V">
-                                <rect key="frame" x="129" y="431" width="157" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="n0A-Rr-lDP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="tpu-Qh-z0U"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JNp-Pd-eBm"/>
                         <color key="backgroundColor" red="0.37254901960784315" green="0.6588235294117647" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,21 +148,24 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="H6s-yE-UQH"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="FilterSpecializedTextBox" destination="Hw7-vA-G3V" id="ae2-Qz-CpW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCY-ED-Cfd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844.92753623188412" y="77.678571428571431"/>
+            <point key="canvasLocation" x="817" y="78"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Results Table View Controller-->
         <scene sceneID="UKT-J0-wHx">
             <objects>
-                <tableViewController id="DRm-97-8w5" sceneMemberID="viewController">
+                <tableViewController id="DRm-97-8w5" customClass="ResultsTableViewController" customModule="Tello" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GhR-Z0-Wsf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <toolbar key="tableHeaderView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2bO-tV-hf4">
-                            <rect key="frame" x="0.0" y="-54" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="54" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Item" image="arrowshape.turn.up.backward.fill" catalog="system" id="fG2-mn-A1y">
@@ -179,10 +190,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Azc-wz-iXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="749"/>
+            <point key="canvasLocation" x="1519" y="78"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Hmr-fX-Cti"/>
         <segue reference="d7Z-9u-NoA"/>
     </inferredMetricsTieBreakers>
     <resources>

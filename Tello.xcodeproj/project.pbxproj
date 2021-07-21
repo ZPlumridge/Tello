@@ -16,6 +16,9 @@
 		2E4A308B26A7444800AFF9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A308926A7444800AFF9D8 /* LaunchScreen.storyboard */; };
 		2E4A309626A7444800AFF9D8 /* TelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A309526A7444800AFF9D8 /* TelloTests.swift */; };
 		2E4A30A126A7444800AFF9D8 /* TelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A30A026A7444800AFF9D8 /* TelloUITests.swift */; };
+		2EE173EC26A8767A00A72EC3 /* filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE173EB26A8767A00A72EC3 /* filter.swift */; };
+		2EE173F226A88FA400A72EC3 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE173F126A88FA400A72EC3 /* FilterViewController.swift */; };
+		2EE173F426A88FCA00A72EC3 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE173F326A88FCA00A72EC3 /* ResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2E4A309C26A7444800AFF9D8 /* TelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4A30A026A7444800AFF9D8 /* TelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelloUITests.swift; sourceTree = "<group>"; };
 		2E4A30A226A7444800AFF9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE173EB26A8767A00A72EC3 /* filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filter.swift; sourceTree = "<group>"; };
+		2EE173F126A88FA400A72EC3 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		2EE173F326A88FCA00A72EC3 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +110,14 @@
 				2E4A307B26A7444600AFF9D8 /* AppDelegate.swift */,
 				2E4A307D26A7444600AFF9D8 /* SceneDelegate.swift */,
 				2E4A307F26A7444600AFF9D8 /* ViewController.swift */,
+				2EE173EB26A8767A00A72EC3 /* filter.swift */,
 				2E4A308126A7444600AFF9D8 /* Main.storyboard */,
 				2E4A308726A7444800AFF9D8 /* Assets.xcassets */,
 				2E4A308926A7444800AFF9D8 /* LaunchScreen.storyboard */,
 				2E4A308C26A7444800AFF9D8 /* Info.plist */,
 				2E4A308426A7444600AFF9D8 /* Tello.xcdatamodeld */,
+				2EE173F126A88FA400A72EC3 /* FilterViewController.swift */,
+				2EE173F326A88FCA00A72EC3 /* ResultsTableViewController.swift */,
 			);
 			path = Tello;
 			sourceTree = "<group>";
@@ -261,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE173F226A88FA400A72EC3 /* FilterViewController.swift in Sources */,
+				2EE173F426A88FCA00A72EC3 /* ResultsTableViewController.swift in Sources */,
 				2E4A308026A7444600AFF9D8 /* ViewController.swift in Sources */,
 				2E4A307C26A7444600AFF9D8 /* AppDelegate.swift in Sources */,
+				2EE173EC26A8767A00A72EC3 /* filter.swift in Sources */,
 				2E4A308626A7444600AFF9D8 /* Tello.xcdatamodeld in Sources */,
 				2E4A307E26A7444600AFF9D8 /* SceneDelegate.swift in Sources */,
 			);
