@@ -20,17 +20,17 @@ class FilterViewController: UIViewController {
 
     
     @IBOutlet weak var FilterSpecialtyTextBox: UITextField!
-    let filterSpecialityTextBox : [String]! = nil
+    
     
     @IBAction func FilterSubmitButton(_ sender: Any) {
-        if FilterSpecialtyTextBox.contains(possibleSpecialties as! UIFocusEnvironment) {
+//        if FilterSpecialtyTextBox.contains(possibleSpecialties as! UIFocusEnvironment) {
         
         
         //if let typeOfCare = FilterSpecialtyTextBox.text {
         //filteredResults
             
        // }
-    //}
+    }
     
     //.lowercased() to completely lowercase
     
@@ -45,5 +45,5 @@ class FilterViewController: UIViewController {
     */
 
 }
-}
-}
+
+
